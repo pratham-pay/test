@@ -21,7 +21,7 @@ node {
          * First, the incremental build number from Jenkins
          * Second, the 'latest' tag.
          * Pushing multiple tags is cheap, as all the layers are reused. */
-        docker.withRegistry("${env.DOCKER_REGISTRY}", '5e8ce752-e348-448b-8e25-8aa9f6b4d006') {
+        docker.withRegistry("${env.DOCKER_REGISTRY}", 'paysense docker hub credential') {
             ams.push("${env.BUILD_NUMBER}-${env.BRANCH_NAME}")
             ams.push("latest-${env.BRANCH_NAME}")
         }
