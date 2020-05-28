@@ -30,7 +30,7 @@ node {
         
         sh '''
             #!/bin/bash
-            If [ $BRANCH_NAME == master ]
+            If [[ $BRANCH_NAME == master ]]
 then
     echo “Branch name is “master”
 else
