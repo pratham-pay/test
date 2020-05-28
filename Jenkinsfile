@@ -27,7 +27,7 @@ node {
         }
         sh 'docker rmi -f $(docker images --filter "reference=*/paysense/ams-nbfc:*-$BRANCH_NAME" -q | tail -n +4) || echo "No images to remove"'
         sh 'docker rmi $(docker images -f "dangling=true" -q) || echo "No Dangling images to remove"'
-        
+        sh 'chmod +x ./test.sh'
         sh './test.sh'
     }
 }
