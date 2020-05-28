@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ false ]; then
+if [ "$BRANCH_NAME" == "master" ]; then
     echo "True"
 else
     echo "False"
