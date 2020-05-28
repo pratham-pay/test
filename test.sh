@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ $BRANCH_NAME == "master1" ]; then
-    echo "True"
+if [ $BRANCH_NAME == "master" ]; then
+  yes | make deploy ENV=prod'
 else
-    echo "False"
+yes | make deploy
 fi
