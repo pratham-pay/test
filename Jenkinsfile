@@ -32,7 +32,7 @@ node {
         #!/bin/sh
 
 #!/bin/sh
-if [[ $BRANCH_NAME == "master" ]]; then
+if [[ "$BRANCH_NAME" == "master" ]]; then
     echo "True"
 else
     echo "False"
