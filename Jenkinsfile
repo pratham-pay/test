@@ -29,6 +29,6 @@ node {
         sh 'docker rmi $(docker images -f "dangling=true" -q) || echo "No Dangling images to remove"'
        
          sh 'chmod +x ./test.sh'
-        sh './test.sh'
+        sh 'bash ./test.sh'
     }
 }
