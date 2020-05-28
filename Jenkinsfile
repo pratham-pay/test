@@ -31,7 +31,7 @@ node {
         sh '''
         #!/bin/sh
 
-#!/bin/sh
+#!/bin/bash
 if [[ "$BRANCH_NAME" == "master" ]]; then
     echo "True"
 else
