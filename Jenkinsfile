@@ -27,6 +27,6 @@ node {
         }
         sh 'docker rmi -f $(docker images --filter "reference=*/paysense/ams-nbfc:*-$BRANCH_NAME" -q | tail -n +4) || echo "No images to remove"'
         sh 'docker rmi $(docker images -f "dangling=true" -q) || echo "No Dangling images to remove"'
-        sh 'If [ BRANCH_NAME == master ]; then echo “Branch name is “master” ;else echo “Branch name is “sandbox” fi'
+        sh 'If [ BRANCH_NAME == master ]; then echo “Branch name is “master”; else echo “Branch name is “sandbox”; fi'
     }
 }
