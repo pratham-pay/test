@@ -30,7 +30,13 @@ node {
         
         sh '''
             #!/bin/bash
-            echo "hello world"
+            If [ $BRANCH_NAME == master ]
+then
+    echo “Branch name is “master”
+else
+
+    echo “Branch name is “sandbox”
+fi
          '''
     }
 }
