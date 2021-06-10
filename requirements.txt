@@ -1,4 +1,4 @@
-Django==1.11.28
+Django==2.2.24
 django-choices==1.6.2
 django-cors-headers==2.1.0
 django-environ==0.4.5
