@@ -24,7 +24,7 @@ gunicorn==19.9.0
 docutils==0.14
 fuzzywuzzy==0.11.1
 cached-property==1.5.1
-celery==4.2.1
+celery==5.2.2
 appdirs==1.4.3
 billiard==3.5.0.4
 django-choices==1.6.2
